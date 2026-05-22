@@ -34,9 +34,7 @@ export function Header({ logo, navigation, cta }: HeaderProps) {
     const preferredTheme =
       storedTheme === "light" || storedTheme === "dark"
         ? storedTheme
-        : window.matchMedia("(prefers-color-scheme: light)").matches
-          ? "light"
-          : "dark";
+        : "dark";
 
     setTheme(preferredTheme);
     document.documentElement.dataset.theme = preferredTheme;
