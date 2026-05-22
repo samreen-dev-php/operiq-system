@@ -10,7 +10,7 @@
   gap: clamp(1.25rem, 3.2vw, 4rem);
   width: 100%;
   margin: 0 auto;
-  padding: 0.7rem max(2.75rem, calc((100vw - 1100px) / 2));
+  padding: 0.7rem max(2.75rem, calc((100vw - 1440px) / 2));
   border-bottom: 1px solid var(--header-border);
   background: var(--header-bg);
   backdrop-filter: blur(12px);

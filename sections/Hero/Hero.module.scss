@@ -44,7 +44,7 @@
   grid-template-columns: minmax(0, 1fr) minmax(21rem, 43%);
   align-items: center;
   gap: clamp(1.5rem, 4vw, 4rem);
-  width: min(100% - 5.5rem, 1240px);
+  width: min(100% - 5.5rem, 1520px);
   margin: 0 auto;
   padding-top: 0.75rem;
 }
@@ -229,7 +229,7 @@
 
   .content {
     grid-template-columns: 1fr;
-    width: min(100% - 2.5rem, 1280px);
+    width: min(100% - 2.5rem, 1520px);
     gap: 0;
     padding-top: 0;
   }
@@ -252,7 +252,7 @@
   }
 
   .content {
-    width: min(100% - 2rem, 1280px);
+    width: min(100% - 2rem, 1520px);
   }
 
   .title {
