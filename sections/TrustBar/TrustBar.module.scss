@@ -258,3 +258,26 @@
     transform: scale(0.8) translateY(-1px);
   }
 }
+
+@media (max-width: 480px) {
+  .inner {
+    width: min(100% - 1.5rem, 1180px);
+    padding: 1.25rem 0 1.4rem;
+  }
+
+  .logoRow {
+    gap: 1rem 1.2rem;
+  }
+
+  .logoItem,
+  .moreLink {
+    min-width: 3.8rem;
+    min-height: 1.9rem;
+    transform: scale(0.72);
+  }
+
+  .logoItem:hover,
+  .moreLink:hover {
+    transform: scale(0.72) translateY(-1px);
+  }
+}
