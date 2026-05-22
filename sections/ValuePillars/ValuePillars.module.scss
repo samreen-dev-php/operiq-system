@@ -17,7 +17,7 @@
 .inner {
   width: min(100% - 5.5rem, 1520px);
   margin: 0 auto;
-  padding: clamp(1.8rem, 4.2vw, 3rem) 0 clamp(1.8rem, 3.8vw, 2.65rem);
+  padding: clamp(1.25rem, 3vw, 2rem) 0 clamp(1.35rem, 3vw, 2rem);
 }
 
 .headerGroup {
@@ -27,7 +27,7 @@
     margin: 0;
     color: #38bdf8;
     font-size: clamp(0.68rem, 0.86vw, 0.78rem);
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.18em;
     line-height: 1.4;
     text-transform: uppercase;
@@ -37,9 +37,10 @@
     margin: 0.52rem 0 0;
     color: #ffffff;
     font-size: clamp(1.62rem, 2.55vw, 2.12rem);
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0;
     line-height: 1.18;
+    text-wrap: balance;
   }
 }
 
@@ -95,9 +96,6 @@
 
     .iconWrap {
       transform: scale(1.05);
-      filter:
-        drop-shadow(0 0 13px rgba(56, 189, 248, 0.8))
-        drop-shadow(0 0 30px rgba(0, 112, 243, 0.38));
     }
   }
 
@@ -111,7 +109,7 @@
     margin: 0.6rem 0 0;
     color: #ffffff;
     font-size: clamp(0.92rem, 1.18vw, 1.02rem);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.28;
   }
 
@@ -122,6 +120,7 @@
     font-size: 0.82rem;
     font-weight: 450;
     line-height: 1.58;
+    text-wrap: pretty;
   }
 }
 
@@ -129,16 +128,11 @@
   position: relative;
   z-index: 1;
   display: inline-grid;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 4rem;
+  height: 4rem;
   place-items: center;
   color: #38bdf8;
-  filter:
-    drop-shadow(0 0 10px rgba(56, 189, 248, 0.68))
-    drop-shadow(0 0 22px rgba(0, 112, 243, 0.28));
-  transition:
-    filter 280ms ease,
-    transform 280ms ease;
+  transition: transform 280ms ease;
 }
 
 @media (max-width: 980px) {

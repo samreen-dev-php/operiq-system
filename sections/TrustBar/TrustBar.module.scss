@@ -42,18 +42,19 @@
 .inner {
   width: min(100% - 5.5rem, 1520px);
   margin: 0 auto;
-  padding: clamp(1.55rem, 3.2vw, 2rem) 0;
+  padding: clamp(1.1rem, 2.25vw, 1.45rem) 0;
 }
 
 .title {
   margin: 0;
   color: #38bdf8;
   font-size: clamp(0.68rem, 0.86vw, 0.8rem);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.18em;
   line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 .logoRow {
@@ -62,7 +63,7 @@
   align-items: center;
   justify-content: center;
   gap: clamp(1.8rem, 5vw, 4rem);
-  margin-top: clamp(1.2rem, 2.4vw, 1.55rem);
+  margin-top: clamp(0.85rem, 1.7vw, 1.1rem);
 }
 
 .logoItem,
@@ -76,36 +77,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: rgba(241, 245, 249, 0.92);
-  filter: grayscale(100%) brightness(0.8);
-  opacity: 0.6;
-  transition:
-    opacity 300ms ease-in-out,
-    filter 300ms ease-in-out,
-    text-shadow 300ms ease-in-out,
-    transform 300ms ease-in-out;
-
-  &::before {
-    position: absolute;
-    inset: -0.55rem;
-    z-index: -1;
-    content: "";
-    border-radius: 0.45rem;
-    background: rgba(56, 189, 248, 0);
-    filter: blur(1rem);
-    transition: background 300ms ease-in-out;
-  }
-
-  &:hover {
-    filter: grayscale(0%) brightness(1);
-    opacity: 1;
-    text-shadow: 0 0 18px rgba(56, 189, 248, 0.34);
-    transform: translateY(-1px);
-
-    &::before {
-      background: rgba(56, 189, 248, 0.18);
-    }
-  }
+  color: rgba(248, 250, 252, 0.95);
+  filter: none;
+  opacity: 0.86;
 
   small {
     position: absolute;
@@ -137,8 +111,8 @@
 .badge .logoMark {
   width: 3.1rem;
   height: 3.1rem;
-  border: 1px solid rgba(241, 245, 249, 0.55);
-  background: rgba(248, 250, 252, 0.08);
+  border: 1px solid rgba(248, 250, 252, 0.72);
+  background: rgba(248, 250, 252, 0.12);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.28rem;
   font-weight: 500;
@@ -214,15 +188,11 @@
   opacity: 0.72;
   transition:
     color 300ms ease-in-out,
-    opacity 300ms ease-in-out,
-    text-shadow 300ms ease-in-out,
-    transform 300ms ease-in-out;
+    opacity 300ms ease-in-out;
 
   &:hover {
     color: #f8fafc;
-    opacity: 1;
-    text-shadow: 0 0 18px rgba(56, 189, 248, 0.34);
-    transform: translateY(-1px);
+    opacity: 0.82;
   }
 }
 
@@ -239,7 +209,7 @@
 @media (max-width: 780px) {
   .inner {
     width: min(100% - 2rem, 1180px);
-    padding: 1.45rem 0 1.65rem;
+    padding: 1.15rem 0 1.25rem;
   }
 
   .logoRow {
@@ -253,20 +223,20 @@
     transform: scale(0.8);
   }
 
-  .logoItem:hover,
-  .moreLink:hover {
-    transform: scale(0.8) translateY(-1px);
-  }
 }
 
 @media (max-width: 480px) {
   .inner {
     width: min(100% - 1.5rem, 1180px);
-    padding: 1.25rem 0 1.4rem;
+    padding: 1rem 0 1.1rem;
   }
 
   .logoRow {
     gap: 1rem 1.2rem;
+  }
+
+  .title {
+    letter-spacing: 0.12em;
   }
 
   .logoItem,
@@ -276,8 +246,4 @@
     transform: scale(0.72);
   }
 
-  .logoItem:hover,
-  .moreLink:hover {
-    transform: scale(0.72) translateY(-1px);
-  }
 }

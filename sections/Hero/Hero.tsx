@@ -28,41 +28,40 @@ type HeroProps = {
 export function Hero({ content }: HeroProps) {
   return (
     <section className={styles.hero} aria-labelledby="hero-title">
-      <div className={styles.content}>
-        <div className={styles.copy}>
+      <div className={styles.container}>
+        <div className={styles.content}>
           <p className={styles.eyebrow}>{content.eyebrow}</p>
+          
           <h1 id="hero-title" className={styles.title}>
-            <span>{content.title}</span>
-            <strong>{content.highlightedTitle}</strong>
+            <span className={styles.titleBase}>{content.title}</span>
+            <span className={styles.titleHighlight}>{content.highlightedTitle}</span>
           </h1>
+          
           <p className={styles.description}>{content.description}</p>
 
           <div className={styles.actions}>
-            <Link className={styles.primaryButton} href={content.primaryAction.href}>
+            <Link className={styles.primaryBtn} href={content.primaryAction.href}>
               {content.primaryAction.label}
-              <ArrowRight size={18} strokeWidth={2.2} aria-hidden="true" />
+              <ArrowRight size={16} strokeWidth={2} aria-hidden="true" />
             </Link>
-            <Link className={styles.secondaryButton} href={content.secondaryAction.href}>
+            <Link className={styles.secondaryBtn} href={content.secondaryAction.href}>
               {content.secondaryAction.label}
-              <ArrowRight size={18} strokeWidth={2.2} aria-hidden="true" />
+              <ArrowRight size={16} strokeWidth={2} aria-hidden="true" />
             </Link>
           </div>
 
-          <ul className={styles.features} aria-label="Platform strengths">
+          <div className={styles.featuresList}>
             {content.features.map((feature) => {
               const Icon = feature.icon;
-
               return (
-                <li key={feature.label}>
-                  <Icon size={34} strokeWidth={1.65} aria-hidden="true" />
-                  <span>{feature.label}</span>
-                </li>
+                <div className={styles.featureItem} key={feature.label}>
+                  <Icon className={styles.featureIcon} size={30} strokeWidth={1.5} aria-hidden="true" />
+                  <span className={styles.featureText}>{feature.label}</span>
+                </div>
               );
             })}
-          </ul>
+          </div>
         </div>
-
-        <div className={styles.visual} aria-hidden="true" />
       </div>
     </section>
   );

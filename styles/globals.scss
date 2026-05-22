@@ -2,11 +2,20 @@
   color-scheme: dark;
   --page-bg: #020913;
   --page-text: #ffffff;
-  --header-bg: rgba(2, 6, 23, 0.75);
-  --header-border: rgba(255, 255, 255, 0.08);
+  --font-sans: var(--font-body), Arial, Helvetica, sans-serif;
+  --font-brand: var(--font-display), "Arial Black", Arial, sans-serif;
+  --layout-max: 1440px;
+  --layout-gutter: clamp(1.25rem, 3.9vw, 3.25rem);
+  --color-blue-300: #55cfff;
+  --color-blue-400: #159cff;
+  --color-blue-500: #0077ff;
+  --color-blue-600: #005ee8;
+  --header-height: 5.6rem;
+  --header-bg: rgba(1, 7, 17, 0.62);
+  --header-border: rgba(44, 151, 255, 0.08);
   --header-link: rgba(255, 255, 255, 0.88);
   --header-link-hover: #ffffff;
-  --header-control-bg: rgba(5, 22, 42, 0.66);
+  --header-control-bg: rgba(2, 13, 27, 0.46);
   --header-logo-core: #031121;
   background: #020913;
 }
@@ -43,6 +52,7 @@ html {
 body {
   min-width: 320px;
   margin: 0;
+  font-family: var(--font-sans);
   color: var(--page-text);
   background: var(--page-bg);
   text-rendering: geometricPrecision;
@@ -50,6 +60,10 @@ body {
   transition:
     color 240ms ease,
     background 240ms ease;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 a {

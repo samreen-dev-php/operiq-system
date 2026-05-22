@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChevronDown, Menu, Moon, Sun, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import styles from "./Header.module.scss";
 
 type NavigationItem = {
@@ -26,27 +26,7 @@ type HeaderProps = {
 };
 
 export function Header({ logo, navigation, cta }: HeaderProps) {
-  const [theme, setTheme] = useState<"dark" | "light">("dark");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const storedTheme = window.localStorage.getItem("operiq-theme");
-    const preferredTheme =
-      storedTheme === "light" || storedTheme === "dark"
-        ? storedTheme
-        : "dark";
-
-    setTheme(preferredTheme);
-    document.documentElement.dataset.theme = preferredTheme;
-  }, []);
-
-  function toggleTheme() {
-    const nextTheme = theme === "dark" ? "light" : "dark";
-
-    setTheme(nextTheme);
-    document.documentElement.dataset.theme = nextTheme;
-    window.localStorage.setItem("operiq-theme", nextTheme);
-  }
 
   function closeMenu() {
     setIsMenuOpen(false);
@@ -55,7 +35,7 @@ export function Header({ logo, navigation, cta }: HeaderProps) {
   return (
     <header className={styles.header}>
       <Link className={styles.logo} href="/" aria-label={`${logo.name} ${logo.suffix} home`}>
-        <Image className={styles.logoMark} src="/images/logo.png" alt="" width={60} height={60} priority aria-hidden="true" />
+        <Image className={styles.logoMark} src="/images/logo.png" alt="" width={54} height={54} priority aria-hidden="true" />
         <span className={styles.logoText}>
           <span>{logo.name}</span>
           <small>{logo.suffix}</small>
@@ -72,16 +52,6 @@ export function Header({ logo, navigation, cta }: HeaderProps) {
       </nav>
 
       <div className={styles.actions}>
-        <button
-          className={styles.themeToggle}
-          type="button"
-          onClick={toggleTheme}
-          aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-          title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-        >
-          {theme === "dark" ? <Sun size={16} strokeWidth={2.2} /> : <Moon size={16} strokeWidth={2.2} />}
-        </button>
-
         <Link className={styles.cta} href={cta.href}>
           {cta.label}
           <ArrowRight size={15} strokeWidth={2.2} aria-hidden="true" />

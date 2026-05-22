@@ -33,7 +33,7 @@ export function ValuePillars({ content }: ValuePillarsProps) {
             return (
               <article className={styles.pillar} key={pillar.title}>
                 <div className={styles.iconWrap} aria-hidden="true">
-                  <Icon size={46} strokeWidth={1.65} />
+                  <Icon size={52} strokeWidth={1.65} />
                 </div>
                 <h3>{pillar.title}</h3>
                 <p>{pillar.description}</p>

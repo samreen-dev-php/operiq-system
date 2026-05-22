@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Orbitron } from "next/font/google";
 import "@/styles/globals.scss";
 
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
+  variable: "--font-body"
+});
+
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-display"
 });
 
 export const metadata: Metadata = {
@@ -20,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="dark">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${orbitron.variable}`}>{children}</body>
     </html>
   );
 }
