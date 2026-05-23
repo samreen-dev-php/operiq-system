@@ -95,7 +95,7 @@
 
 .button {
   justify-self: center;
-  transform: translateX(-4rem);
+  transform: translateX(-6rem);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +124,7 @@
       0 0 34px rgba(0, 112, 243, 0.62),
       0 0 58px rgba(14, 165, 233, 0.18),
       inset 0 1px 0 rgba(255, 255, 255, 0.28);
-    transform: translate(-4rem, -2px);
+    transform: translate(-6rem, -2px);
   }
 }
 
@@ -164,7 +164,7 @@
   }
 
   .button {
-    min-width: 100%;
+    min-width: 12.5rem;
     min-height: 3.1rem;
   }
 }

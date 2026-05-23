@@ -22,7 +22,7 @@
 .inner {
   width: min(100% - 5.5rem, 1520px);
   margin: 0 auto;
-  padding: clamp(1.2rem, 2.7vw, 1.95rem) 0 clamp(1.75rem, 3.8vw, 2.85rem);
+  padding: clamp(1.2rem, 2.7vw, 1.95rem) 0 clamp(0.5rem, 1vw, 0.85rem);
 }
 
 .headerGroup {
@@ -31,7 +31,7 @@
   p {
     margin: 0;
     color: #38bdf8;
-    font-size: clamp(0.68rem, 0.86vw, 0.8rem);
+    font-size: clamp(0.8rem, 1vw, 0.95rem);
     font-weight: 600;
     letter-spacing: 0.18em;
     line-height: 1.4;

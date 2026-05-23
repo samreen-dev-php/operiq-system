@@ -10,7 +10,7 @@
   isolation: isolate;
   
   // Padding top accounts for the fixed header
-  padding: 7.2rem 0 4rem;
+  padding: 9.5rem 0 4rem;
   
   // The dark base background
   background-color: #020617;
@@ -67,9 +67,9 @@
 .eyebrow {
   margin: 0;
   color: #38bdf8;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.15em; // Wide tracking
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -84,13 +84,13 @@
 .titleBase {
   color: #ffffff;
   font-size: clamp(2.5rem, 4vw, 3.5rem);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .titleHighlight {
   color: #38bdf8;
   font-size: clamp(2.5rem, 4vw, 3.5rem);
-  font-weight: 600;
+  font-weight: 700;
   // Subtle text shadow to give it that tech glow
   text-shadow: 0 0 24px rgba(56, 189, 248, 0.3);
 }

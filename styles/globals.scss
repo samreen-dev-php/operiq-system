@@ -1,3 +1,14 @@
+/*
+ * GLOBAL FONT CONVENTION — DO NOT OVERRIDE font-family in module files
+ *
+ * Body/UI text  → font-family: var(--font-sans)   → Inter (set on <body>, inherited everywhere)
+ * Brand/display → font-family: var(--font-brand)  → Orbitron (use only for logos / hero headlines)
+ *
+ * Never hard-code a font-family in a .module.scss file.
+ * If you need to deviate, re-assign the variable locally:
+ *   .myComponent { --font-sans: "SomeOtherFont", sans-serif; }
+ */
+
 :root {
   color-scheme: dark;
   --page-bg: #020913;

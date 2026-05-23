@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="dark">
-      <body className={`${inter.variable} ${orbitron.variable}`}>{children}</body>
+    <html lang="en" data-theme="dark" className={`${inter.variable} ${orbitron.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

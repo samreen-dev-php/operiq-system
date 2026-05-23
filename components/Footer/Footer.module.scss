@@ -76,9 +76,11 @@
 
 .logoText {
   display: grid;
-  gap: 0.2rem;
-  letter-spacing: 0.19em;
+  gap: 0.26rem;
+  font-family: var(--font-brand);
+  letter-spacing: 0.13em;
   line-height: 1;
+  transform: translateY(0.05rem);
 
   span {
     color: #ffffff;
@@ -89,7 +91,8 @@
   small {
     color: #148fff;
     font-size: clamp(0.64rem, 0.82vw, 0.78rem);
-    font-weight: 800;
+    font-weight: 700;
+    letter-spacing: 0.56em;
   }
 }
 
