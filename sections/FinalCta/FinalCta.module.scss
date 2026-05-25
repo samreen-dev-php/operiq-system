@@ -107,7 +107,7 @@
   color: #ffffff;
   background: linear-gradient(135deg, #005cff, #0ea5e9);
   box-shadow:
-    0 0 25px rgba(0, 112, 243, 0.5),
+    0 0 14px rgba(0, 112, 243, 0.28),
     inset 0 1px 0 rgba(255, 255, 255, 0.22);
   gap: 0.95rem;
   font-size: 0.88rem;
@@ -121,8 +121,8 @@
   &:hover {
     border-color: #bae6fd;
     box-shadow:
-      0 0 34px rgba(0, 112, 243, 0.62),
-      0 0 58px rgba(14, 165, 233, 0.18),
+      0 0 20px rgba(0, 112, 243, 0.38),
+      0 0 34px rgba(14, 165, 233, 0.1),
       inset 0 1px 0 rgba(255, 255, 255, 0.28);
     transform: translate(-6rem, -2px);
   }

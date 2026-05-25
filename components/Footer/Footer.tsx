@@ -56,7 +56,15 @@ export function Footer({ content }: FooterProps) {
           </div>
 
           {content.columns.map((column) => (
-            <nav className={styles.linkColumn} aria-label={column.title} key={column.title}>
+            <nav
+              className={`${styles.linkColumn} ${
+                column.title === "PLATFORM" || column.title === "COMPANY" || column.title === "RESOURCES"
+                  ? styles.noDivider
+                  : ""
+              }`}
+              aria-label={column.title}
+              key={column.title}
+            >
               <h2>{column.title}</h2>
               {column.links.map((link) => (
                 <Link href={linkHref(link)} key={link}>

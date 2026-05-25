@@ -37,7 +37,7 @@
 
 .mainGrid {
   display: grid;
-  grid-template-columns: minmax(16rem, 2fr) repeat(4, minmax(7rem, 0.72fr)) minmax(17rem, 1.45fr);
+  grid-template-columns: minmax(16rem, 2fr) minmax(7rem, 0.72fr) minmax(9.25rem, 0.95fr) minmax(7rem, 0.72fr) minmax(7rem, 0.72fr) minmax(17rem, 1.45fr);
   gap: clamp(1.3rem, 2.2vw, 2.2rem);
 }
 
@@ -102,6 +102,10 @@
   border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.noDivider {
+  border-left: 0;
+}
+
 .linkColumn {
   display: flex;
   flex-direction: column;
@@ -123,6 +127,7 @@
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.25;
+    white-space: nowrap;
     transition:
       color 220ms ease-in-out,
       transform 220ms ease-in-out;

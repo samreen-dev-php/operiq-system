@@ -69,13 +69,15 @@
   flex-direction: column;
   overflow: hidden;
   padding: 1.32rem 1.22rem 1.12rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid color-mix(in srgb, var(--product-color) 34%, rgba(255, 255, 255, 0.05));
   border-radius: 12px;
   background:
+    radial-gradient(circle at 24% 10%, color-mix(in srgb, var(--product-color) 16%, transparent), transparent 11rem),
     linear-gradient(145deg, rgba(255, 255, 255, 0.065), transparent 36%),
     rgba(15, 23, 42, 0.4);
   backdrop-filter: blur(12px);
   box-shadow:
+    0 0 18px color-mix(in srgb, var(--product-color) 10%, transparent),
     inset 0 1px 0 rgba(255, 255, 255, 0.06),
     0 18px 40px rgba(0, 0, 0, 0.18);
   transition:
@@ -117,11 +119,13 @@
 }
 
 :global(:root[data-theme="light"]) .card {
-  border-color: rgba(15, 23, 42, 0.08);
+  border-color: color-mix(in srgb, var(--product-color) 28%, rgba(15, 23, 42, 0.08));
   background:
+    radial-gradient(circle at 24% 10%, color-mix(in srgb, var(--product-color) 13%, transparent), transparent 11rem),
     linear-gradient(145deg, rgba(255, 255, 255, 0.9), transparent 42%),
     rgba(255, 255, 255, 0.68);
   box-shadow:
+    0 0 18px color-mix(in srgb, var(--product-color) 8%, transparent),
     inset 0 1px 0 rgba(255, 255, 255, 0.82),
     0 18px 40px rgba(15, 23, 42, 0.08);
 }

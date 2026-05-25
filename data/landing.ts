@@ -32,7 +32,7 @@ export const landingPage = {
     title: "Connected Workflows.",
     highlightedTitle: "Stronger Operations",
     description:
-      "Operiq Systems delivers robust workflow infrastructure that helps operations-heavy organizations—from government contractors to logistics and construction—work smarter, move faster, and achieve critical outcomes.",
+      "Operiq Systems delivers robust workflow infrastructure that helps operations-heavy organizations from enterprise sectors to logistics and construction work smarter, move faster, and achieve critical outcomes.",
     primaryAction: {
       label: "Explore Our Platform",
       href: "#platform"
@@ -136,7 +136,7 @@ export const landingPage = {
     brand: {
       logo: brandLogo,
       description:
-        "AI-powered workflow infrastructure for operations-heavy teams that build, protect, and serve communities."
+        "Intelligent workflow infrastructure for operations-heavy teams that build, protect, and serve communities."
     },
     columns: [
       {
@@ -158,7 +158,7 @@ export const landingPage = {
     ],
     connected: {
       title: "STAY CONNECTED",
-      description: "Insights, updates, and best practices for public sector innovators.",
+      description: "Insights, updates, and best practices for enterprise innovators.",
       placeholder: "Enter your email",
       socials: [
         { label: "LinkedIn", mark: "in" },
@@ -172,3 +172,4 @@ export const landingPage = {
     }
   }
 } as const;
+
