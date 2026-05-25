@@ -37,7 +37,7 @@
 
 .mainGrid {
   display: grid;
-  grid-template-columns: minmax(16rem, 2fr) minmax(7rem, 0.72fr) minmax(9.25rem, 0.95fr) minmax(7rem, 0.72fr) minmax(7rem, 0.72fr) minmax(17rem, 1.45fr);
+  grid-template-columns: minmax(16rem, 2fr) minmax(7rem, 0.72fr) minmax(9.25rem, 0.95fr) minmax(7rem, 0.72fr) minmax(8.5rem, 0.86fr) minmax(17rem, 1.35fr);
   gap: clamp(1.3rem, 2.2vw, 2.2rem);
 }
 
@@ -106,6 +106,14 @@
   border-left: 0;
 }
 
+.linkColumn.noDivider {
+  padding-left: clamp(0.25rem, 0.7vw, 0.65rem);
+}
+
+.brandBlock + .linkColumn {
+  margin-left: clamp(-1.25rem, -1.2vw, -0.8rem);
+}
+
 .linkColumn {
   display: flex;
   flex-direction: column;
@@ -140,6 +148,8 @@
 }
 
 .connected {
+  margin-left: clamp(0.45rem, 1vw, 0.9rem);
+
   h2 {
     margin: 0;
     color: #38bdf8;
@@ -306,6 +316,7 @@
   .brandBlock,
   .linkColumn,
   .connected {
+    margin-left: 0;
     padding: 0;
     border-left: 0;
     border-right: 0;
