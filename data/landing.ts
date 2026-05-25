@@ -28,11 +28,11 @@ export const landingPage = {
     href: "#demo"
   },
   hero: {
-    eyebrow: "AI PUBLIC SECTOR WORKFLOW INFRASTRUCTURE",
-    title: "Intelligent Workflows.",
-    highlightedTitle: "Stronger Missions.",
+    eyebrow: "COMMAND-CENTER WORKFLOW INFRASTRUCTURE",
+    title: "Connected Workflows.",
+    highlightedTitle: "Stronger Operations",
     description:
-      "Operiq Systems delivers AI-powered workflow infrastructure that helps government contractors and agencies work smarter, move faster, and achieve mission-critical outcomes.",
+      "Operiq Systems delivers robust workflow infrastructure that helps operations-heavy organizations—from government contractors to logistics and construction—work smarter, move faster, and achieve critical outcomes.",
     primaryAction: {
       label: "Explore Our Platform",
       href: "#platform"
@@ -43,25 +43,25 @@ export const landingPage = {
     },
     features: [
       { label: "Secure by Design", icon: ShieldCheck },
-      { label: "AI-Powered Intelligence", icon: BrainCircuit },
+      { label: "Data-Driven Insights", icon: BrainCircuit },
       { label: "Connected Ecosystem", icon: GitFork },
-      { label: "Mission Focused", icon: Target }
+      { label: "Operations Focused", icon: Target }
     ]
   },
   trustBar: {
-    title: "TRUSTED BY CONTRACTORS AND AGENCIES ACROSS THE PUBLIC SECTOR",
+    title: "DESIGNED FOR LEADING INFRASTRUCTURE & OPERATIONAL TEAMS",
     logos: [
-      { label: "GSA", variant: "badge" },
-      { label: "NAVFAC", caption: "Naval Facilities Engineering Systems Command", variant: "wordmark" },
-      { label: "USACE", variant: "emblem" },
-      { label: "NAVAIR", variant: "wordmark" },
-      { label: "NASA", variant: "orbit" }
+      { label: "BECHTEL", variant: "wordmark" },
+      { label: "KIEWIT", variant: "wordmark" },
+      { label: "CBRE", variant: "badge" },
+      { label: "FLUOR", variant: "emblem" },
+      { label: "WSP", variant: "orbit" }
     ],
     moreLabel: "...and more"
   },
   productSuite: {
     eyebrow: "THE OPERIQ SYSTEMS PRODUCT SUITE",
-    title: "One Platform. Every Mission.",
+    title: "One Platform. Every Operation.",
     products: [
       {
         name: "OPERIQ BID",
@@ -80,12 +80,12 @@ export const landingPage = {
       },
       {
         name: "OPERIQ CONNECT",
-        description: "Contractor Network & Teaming",
+        description: "Partner & Contractor Network",
         color: "#f97316"
       },
       {
         name: "OPERIQ INTEL",
-        description: "Procurement Intelligence",
+        description: "Market & Procurement Intelligence",
         color: "#2563eb"
       }
     ],
@@ -95,8 +95,8 @@ export const landingPage = {
     }
   },
   valuePillars: {
-    eyebrow: "BUILT FOR THE PUBLIC SECTOR",
-    title: "AI-Powered. Secure. Built to Perform.",
+    eyebrow: "BUILT FOR DEMANDING OPERATIONS",
+    title: "Data-Driven. Secure. Built to Perform.",
     pillars: [
       {
         title: "Enterprise-Grade Security",
@@ -105,28 +105,28 @@ export const landingPage = {
         icon: CloudCheck
       },
       {
-        title: "AI That Works for You",
+        title: "Intelligence That Works for You",
         description:
-          "Purpose-built AI models that turn complex data into clear insights and faster decisions.",
+          "Purpose-built analytics that turn complex data into clear insights and faster decisions.",
         icon: BrainCircuit
       },
       {
         title: "Unified Workflows",
         description:
-          "Integrated tools that connect people, processes, and data across the entire contracting lifecycle.",
+          "Integrated tools that connect people, processes, and data across the entire operational lifecycle.",
         icon: Network
       },
       {
         title: "Outcomes That Matter",
         description:
-          "Drive efficiency, increase win rates, and deliver measurable mission impact.",
+          "Drive efficiency, increase win rates, and deliver measurable operational impact.",
         icon: TrendingUp
       }
     ]
   },
   finalCta: {
     title: "Ready to Transform the Way You Work?",
-    description: "See how Operiq Systems can help you accelerate workflows and achieve mission success.",
+    description: "See how Operiq Systems can help you accelerate workflows and achieve operational excellence.",
     action: {
       label: "Request a Demo",
       href: "#demo"
@@ -136,12 +136,12 @@ export const landingPage = {
     brand: {
       logo: brandLogo,
       description:
-        "AI-powered workflow infrastructure for public-sector teams that build, protect, and serve communities."
+        "AI-powered workflow infrastructure for operations-heavy teams that build, protect, and serve communities."
     },
     columns: [
       {
         title: "PLATFORM",
-        links: ["Overview", "Security", "Integrations", "AI & Data"]
+        links: ["Overview", "Security", "Integrations", "Analytics & Data"]
       },
       {
         title: "PRODUCTS",
