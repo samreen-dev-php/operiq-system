@@ -322,6 +322,10 @@
     border-right: 0;
   }
 
+  .brandBlock + .linkColumn {
+    margin-left: 0;
+  }
+
   .brandBlock {
     padding-bottom: 1.2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
